@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.spatial.distance import minkowski
 from sklearn.preprocessing import StandardScaler
-
+# Pre-process data
 def preprocess_data(df):
     """Prepares the dataset by dropping unnecessary columns and encoding the target variable."""
     drop_cols = ['Question', 'Correct_Code', 'Code_with_Error', 'code_processed',
